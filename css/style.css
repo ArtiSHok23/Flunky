@@ -123,6 +123,7 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: relative;
 }
 .item-container {
     margin: 35px 10px;
@@ -358,4 +359,28 @@ button:hover {
 .main-photo:hover {
     cursor: pointer;
     transform: scale(1.01);
+}
+@media (max-width: 1121px) {
+    .main-photo {
+        align-self: center;
+    }
+    .main-photo img {
+        width: 350px;
+    }
+    .description {
+        font-size: 19px;
+        align-self: center;
+    }
+}
+@media (max-width: 944px) {
+    .restaurant-container {
+        flex-direction: column;
+    }
+    .restaurant-container h3 {
+        position: absolute;
+        top: 20%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
 }
