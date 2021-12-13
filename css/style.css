@@ -323,3 +323,39 @@ button:hover {
 .h2-reg {
     margin-top: 0px;
 }
+.restaurant-container {
+    border: 1px solid #fff;
+    display: flex;
+    padding: 80px 0;
+}
+.restaurant-container h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: 900;
+}
+.main-photo {
+    margin: 20px;
+    border: 1px solid #fff;
+    background-color:  var(--back-header-color);
+}
+.main-info {
+    border: 1px solid #fff;
+    padding: 10px;
+    margin: 20px;
+    background-color: rgba(101, 104, 112, 0.5)
+}
+.description {
+    font-size: 20px;
+}
+.additional {
+    position: relative;
+    bottom: -300px;
+    left: 0px;
+}
+.additional > div {
+    margin: 5px 0;
+}
+.main-photo:hover {
+    cursor: pointer;
+    transform: scale(1.01);
+}
