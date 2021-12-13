@@ -248,7 +248,7 @@ h2 {
     font-size: 16px;
     font-weight: 600;
 }
-.add-info > p:hover {
+.add-info a:hover {
     color: red;
     cursor: pointer;
 }
@@ -319,4 +319,7 @@ button:hover {
     align-items: center;
     flex-direction: column;
     text-indent: 20px;
+}
+.h2-reg {
+    margin-top: 0px;
 }

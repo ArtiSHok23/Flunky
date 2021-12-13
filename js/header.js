@@ -31,6 +31,5 @@ function validForm() {
     let nam = document.forms[myForm][name].value;
     if (nam == '') {
         alert('Введите имя!');
-        return false;
     }
 }
