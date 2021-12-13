@@ -154,5 +154,118 @@ header {
 .footer-logo {
     color: #fff;
 }
-
+.container {
+    width: 100%;
+    display: flex;
+    padding: 0 20px;
+    margin: 0 auto;
+    max-width: 83%;
+}
+.slide {
+    height: 80vh; 
+    border-radius: 20px;
+    margin: 10px;
+    cursor: pointer;
+    color: #fff;
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    transition: all 500ms ease-in-out;
+}
+.slide h3 {
+    position: absolute;
+    font-size: 24px;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+    background-color: rgba(59, 62, 70, 0.9);
+    border-radius: 10px;
+    padding: 10px;
+}  
+.slide.active {
+    flex: 10;
+}
+.slide.active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+.mob-menu li {
+    padding: 5px;
+}
+/*---------Contacts------------*/
+.form-container {
+    padding: 100px;
+}
+.form {
+    margin: 0 auto;
+    width: 60%;
+    border: 1px solid #fff;
+    padding: 5px;
+    height: 650px;
+}
+input {
+    display: block;
+    width: 40%;
+    height: 40px;
+}
+.block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    flex-basis: 20%;
+    margin: 10px;
+}
+.name-block {
+    margin-bottom: 20px;
+}
+p {
+    color: black;
+    font-size: 22px;
+    font-weight: 700;
+}
+h2 {
+    margin-top: 100px;
+    color: black;
+    font-weight: 900;
+    font-size: 28px;
+    padding: 10px 20px;
+    text-align: center;
+}
+.add-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.add-info > p {
+    padding: 5px;
+    color: black;
+    text-decoration: underline;
+    font-size: 16px;
+    font-weight: 600;
+}
+.add-info > p:hover {
+    color: red;
+    cursor: pointer;
+}
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 80px;
+}
+button {
+    padding: 5px 10px;
+    width: 30%;
+    margin: 30px 10px;
+}
+button:hover {
+    cursor: pointer;
+}
+button:hover {
+    background-color: var(--back-header-color);
+    color: #fff;
+}
 

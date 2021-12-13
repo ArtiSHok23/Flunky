@@ -11,3 +11,26 @@ menu.addEventListener('click', () => {
 closee.addEventListener('click', () => {
     mobile.classList.remove('mobile-nav-active');
 });
+
+const slides = document.querySelectorAll('.slide');
+
+for(const slide of slides) {
+    slide.addEventListener('click', () => {
+        clearActiveClasses();
+        slide.classList.add('active');
+    })
+}
+
+function clearActiveClasses() {
+    slides.forEach((slide) => {
+        slide.classList.remove('active');
+    })
+}
+
+function validForm() {
+    let nam = document.forms[myForm][name].value;
+    if (nam == '') {
+        alert('Введите имя!');
+        return false;
+    }
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Flunky</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header-container">
+          <a class="logo" href="#">Flunky</a>
+          <ul class="nav">
+            <li><a href="index.html">Главная страница</a></li>
+            <li><a href="#">Моя страница</a></li>
+            <li><a href="#">Рестораны</a></li>
+            <li><a href="#">Корзина</a></li>
+            <li><a href="#">Выбор языка</a></li>
+          </ul>
+          <div class="menu">Меню</div>
+        </div>
+      </header>
+      <div class="mobile-nav">
+        <ul class="mob-menu">
+          <li>Главная страница</li>
+          <li>Моя страница</li>
+          <li>Рестораны</li>
+          <li>Корзина</li>
+          <li>Выбор языка</li>
+        </ul>
+        <div class="close">&#9746;</div>
+      </div>
+      <main class="main">
+        <div class="form-container">
+          <form name="MyForm" class="form" action="#">
+            <h2>Добро пожаловать!</h2>
+            <div class="name-block block">
+              <p>Введите логин</p>
+              <input type="text" name="name" required/>
+            </div>
+            <div class="password-block block">
+              <p>Введите пароль</p>
+              <input type="password" name="name" required/>
+            </div>
+            <div class="buttons">
+                <button class="enter" type="submit" value="submit">Войти</button>
+                <button class="delete" type="reset">Удалить</button>
+            </div>
+            <div class="add-info">
+              <p class="forg">Забыли пароль?</p>
+              <p class="reg">Зарегистрироваться</p>
+              <p class="gog">Войти с помощью Google</p>
+              <p class="face">Войти с помощью Facebook</p>
+            </div>
+          </form>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer-logo">flunky@gmail.com +375(44) 656-44-33</div>
+      </footer>
+    </div>
+
+    <script src="js/header.js"></script>
+  </body>
+</html>
